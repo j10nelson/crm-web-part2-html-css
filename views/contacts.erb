@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h2>All Contacts</h2>
+
+<ul class="contacts_listed">
+<% Contact.all.each do |contact| %>
+  <li><%= contact.first_name %> <%= contact.last_name %>
+  (<%= contact.email %>)
+  </li>
+<% end %>
+</ul>
+
+  </body>
+</html>
